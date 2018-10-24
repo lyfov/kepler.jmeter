@@ -1,0 +1,133 @@
+[
+  {
+    "publish": {
+      "event": "LOGIN_PHONE",
+      "content": "{'phonenum':'13333333333'}"
+    },
+    "poll": {
+      "event": "ERROR",
+      "content": "{'error_code':'017','is_finish':false}"
+    },
+    "to_cancel": true,
+    "remark": "验证码发送失败,请重新获取"
+  },
+  {
+    "publish": {
+      "event": "LOGIN_PHONE",
+      "content": "{'phonenum':'12333333333'}"
+    },
+    "poll": {
+      "event": "ERROR",
+      "content": "{'error_code':'111','is_finish':false}"
+    },
+    "to_cancel": false,
+    "remark": "你输入了无效的手机号码，非大陆手机号请选择正确的归属地"
+  },
+  {
+    "publish": {
+      "event": "LOGIN_PHONE",
+      "content": "{'phonenum':'13344444444'}"
+    },
+    "poll": {
+      "event": "ERROR",
+      "content": "{'error_code':'111','is_finish':true}"
+    },
+    "to_cancel": true,
+    "remark": "还没有注册支付宝，是否立即注册？"
+  },
+  {
+    "publish": {
+      "event": "PWD",
+      "content": "{'account':'testuser0','password':'d1112'}"
+    },
+    "poll": {
+      "event": "ERROR",
+      "content": "{'error_code':'008','is_finish':false}"
+    },
+    "to_cancel": false,
+    "remark": "账号或登录密码错误，请重新输入"
+  },
+  {
+    "publish": {
+      "event": "PWD",
+      "content": "{'account':'testuser123412','password':'testuser123412'}"
+    },
+    "poll": {
+      "event": "ERROR",
+      "content": "{'error_code':'009','is_finish':true}"
+    },
+    "to_cancel": true,
+    "remark": "账号不存在，请重新输入或注册新账号"
+  },
+  {
+    "publish": {
+      "event": "LOGIN_PWD",
+      "content": "{\"account\":\"18612707802\",\"password\":\"1~2s3d4f5g\"}"
+    },
+    "poll": {
+      "content": "COLLECT",
+      "event": "DEVICE_STATUS"
+    },
+    "to_cancel": false,
+    "line_result": {
+      "address_list": [
+      ],
+      "person_info": {
+        "name": "李思维",
+        "credentials_no": "1****************1"
+      },
+      "bad_credit_recoder": [
+      ],
+      "balance_data": {
+        "yuebaoBaleance": "",
+        "huangjin": "",
+        "jijin": "",
+        "allBalance": "0.00",
+        "dingqi": "",
+        "risk_test": "保守型",
+        "ye": ""
+      }
+    }
+  },
+  {
+    "publish": {
+      "event": "PWD",
+      "content": "{'account':'18810005325','password':'lyfov1505442'}"
+    },
+    "poll": {
+      "content": "COLLECT",
+      "event": "DEVICE_STATUS"
+    },
+    "to_cancel": false,
+    "line_result": {
+      "address_list": [
+        {
+          "person_address": "北京北京市海淀区学院路街道学清路学知园4号楼1606",
+          "person_name_phone": "杜玉明188******25"
+        },
+        {
+          "person_address": "北京北京市海淀区学院路街道学清路8号科技财富中心A座9层东润滑能有限公司",
+          "person_name_phone": "杜玉明188******25"
+        },
+        {
+          "person_address": "北京北京市海淀区学院路街道学知园4号楼1606",
+          "person_name_phone": "杜玉明188******25"
+        }
+      ],
+      "person_info": {
+        "name": "杜玉明",
+        "credentials_no": "2****************0"
+      },
+      "bad_credit_recoder": [],
+      "balance_data": {
+        "yuebaoBaleance": "0.00",
+        "huangjin": "",
+        "jijin": "0.00",
+        "allBalance": "0.00",
+        "dingqi": "0.00",
+        "risk_test": "理财从了解自己开始",
+        "ye": "0.00"
+      }
+    }
+  }
+]
